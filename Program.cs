@@ -28,7 +28,11 @@
             Console.WriteLine($"{firstFriend} has to go to work. They are leaving the coffee shop now.");
             friends.Pop();
                 
-            Console.WriteLine($"There are {friends.Count} friends still at Central Perk.");
+            Console.WriteLine($"There are {friends.Count} friends still at Central Perk:");
+            foreach (var m in friends)
+            {
+                Console.WriteLine(m);
+            }
 
         }
     }
